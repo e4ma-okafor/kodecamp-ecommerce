@@ -40,7 +40,7 @@ const SingleProduct = () => {
         ) : (
           <div className="lg:w-3/5 w-11/12 mx-auto">
       {product && (
-        <div className="lg:flex gap-10 rounded-md p-4">
+        <div className="lg:flex gap-10 rounded-md p-8 border drop-shadow-lg bg-white">
           <div className="lg:h-3/5 lg:w-3/5 w-3/5 md:w-6/12 mx-auto">
           <img src={product.image} alt={product.description}
             className="h-full w-full object-scale-down"
@@ -49,8 +49,8 @@ const SingleProduct = () => {
           <div className="mt-4 lg:mt-0">
             <p className="font-bold text-3xl mb-3">{product.title}</p>
             <p className="font-semibold text-xl mb-3">${product.price}</p>
-            <p className="mb-3 font-medium">{product.description}</p>
-            <p className="mb-3 font-medium">{product.category}</p>            
+            <p className="mb-3">{product.description}</p>
+            <p className="mb-3">{product.category}</p>            
             <p className="font-medium">Rating: <span className="font-normal">{product?.rating?.rate}</span></p>
           </div>
         </div>
