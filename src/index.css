@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-login-pattern {
+    background-image: linear-gradient(45deg,#00000069,#00000069),url(./assets/images/login-bgImage.jpg);
+}
+
+.bg-reg-pattern {
+    background-image: linear-gradient(45deg,#00000069,#00000069),url(./assets/images/Signup-bg.jpg);
+}
+

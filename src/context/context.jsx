@@ -6,7 +6,7 @@ const productContext = React.createContext();
 export const ProductContextProvider = ({ children }) => {
     const [isCartOpen, setIsCartOpen] = useState(false);
     const [cart, setCart] = useState([]);
-    
+        
     return (
         <productContext.Provider
             value={{ isCartOpen, setIsCartOpen, cart, setCart }}

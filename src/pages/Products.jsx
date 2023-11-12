@@ -28,12 +28,12 @@ const Products = () => {
         }
     };
 
-    const addItem = (item) => {
-        console.log('item', item);
+    const addItem = (item) => {   
+        alert("ITEM HAS BEEN ADDED TO CART");     
         let isINCart = cart.some((prod) => prod.id === item.id);
         if (!isINCart) {
             setCart([...cart, { ...item, quantity: 1 }]);
-        }
+        }        
     };  
 
     useEffect(() => {
